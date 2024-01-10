@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digit Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <div id="container">
+        <canvas id="drawingCanvas" width="500" height="500"></canvas>
+
+        <div class="slider-container">
+            <input type="range" min="0" max="1" step="0.01" value="0" class="slider" id="digit-0">
+            <input type="range" min="0" max="1" step="0.01" value="0" class="slider" id="digit-1">
+            <input type="range" min="0" max="1" step="0.01" value="0" class="slider" id="digit-2">
+            <input type="range" min="0" max="1" step="0.01" value="0" class="slider" id="digit-3">
+            <input type="range" min="0" max="1" step="0.01" value="0" class="slider" id="digit-4">
+            <input type="range" min="0" max="1" step="0.01" value="0" class="slider" id="digit-5">
+            <input type="range" min="0" max="1" step="0.01" value="0" class="slider" id="digit-6">
+            <input type="range" min="0" max="1" step="0.01" value="0" class="slider" id="digit-7">
+            <input type="range" min="0" max="1" step="0.01" value="0" class="slider" id="digit-8">
+            <input type="range" min="0" max="1" step="0.01" value="0" class="slider" id="digit-9">
+        </div>
+        <div class="slider-container">
+            <span class="slider-value" id="value0">0</span>
+            <span class="slider-value" id="value1">1</span>
+            <span class="slider-value" id="value2">2</span>
+            <span class="slider-value" id="value3">3</span>
+            <span class="slider-value" id="value4">4</span>
+            <span class="slider-value" id="value5">5</span>
+            <span class="slider-value" id="value6">6</span>
+            <span class="slider-value" id="value7">7</span>
+            <span class="slider-value" id="value8">8</span>
+            <span class="slider-value" id="value9">9</span>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

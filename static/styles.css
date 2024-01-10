@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    display: flex;
+}
+
+#drawingCanvas {
+    border: 3px solid #000;
+    margin-bottom: 10px;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+            }
+
+.slider {
+    width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.slider-value {
+    font-size: 22px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.max-value-element {
+    color: #00ff00; /* Green color */
+}
+
